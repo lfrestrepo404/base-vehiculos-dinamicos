@@ -1,0 +1,46 @@
+#panel-lateral{
+    position: absolute;
+    top: 0;
+    right: -110%;
+    width: 25%;
+    height: 100vh;
+    background: #dedddd;
+    padding: 40px;
+    transition: .5s;
+}
+
+#panel-lateral.active{
+    right: 0;
+}
+
+#panel-lateral h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.card-vehiculo-cart{
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+#panel-lateral .card-vehiculo-cart h2{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.card-vehiculo-cart h3{
+    font-size: 18px;
+    margin-bottom: 0;
+
+}
+
+.card-vehiculo-cart h4{
+    color: green;
+    font-size: 20px;
+    margin: 0;
+}

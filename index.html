@@ -7,6 +7,7 @@
     <title>GESTIÓN DE VEHÍCULOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -20,8 +21,7 @@
                     <!-- Foto (URL) -->
                     <div class="mb-3">
                         <label for="foto" class="form-label">Foto (URL)</label>
-                        <input id="foto" type="url" class="form-control" placeholder="https://ejemplo.com/auto.jpg"
-                            required>
+                        <input id="foto" type="url" class="form-control" placeholder="https://ejemplo.com/auto.jpg">
                     </div>
 
                     <!-- Nombre -->
@@ -62,34 +62,37 @@
             <!-- Columna derecha: Contenedor de tarjetas -->
             <div class="col-md-6" id="cont-cards">
                 <h2 class="mb-3">Vehículos Registrados</h2>
-                <div class="row g-3">
+                <div class="row g-3" id="vehiculos-list">
                     <!-- Ejemplo de tarjeta -->
-                    <div class="col-md-6 item-vehiculo">
-                        <div class="card h-100">
-                            <img src="https://www.buyatoyota.com/sharpr/bat/assets/img/vehicle-info/Corolla/2026/hero-image.png"
-                                class="card-img-top w-100" alt="Foto vehículo">
-                            <div class="card-body">
-                                <h3 class="card-title">Corolla</h3>
-                                <h4 class="card-subtitle text-muted">Toyota</h4>
-                                <h4 class="card-text">Modelo: 2021</h4>
-                                <h4 class="card-text">Kilometraje: 35,000 km</h4>
-                                <h2 class="text-success">$50,000,000</h2>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <button class="btn btn-success">Comprar</button>
-                                    <button class="btn btn-danger">Eliminar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- Aquí se irán agregando las demás tarjetas dinámicamente con JS -->
                 </div>
             </div>
         </div>
     </section>
 
+    <div id="panel-lateral" class="">
+        <h2>CARRITO DE COMPRAS</h2>
+
+        <div id="listado-carrito">
+            
+
+            
+
+        </div>
+
+
+
+    </div>
+
+    <button id="show-panel">CARRITO</button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
